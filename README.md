@@ -37,7 +37,7 @@ The syntax is simialr to many languages and variables can be assigned
 ```
 var=12.0
 ```
-Just like Python, we can pring out the value of the variable:
+Just like Python, we can print out the value of the variable:
 ```
 print(var)
 >>> 12.0
