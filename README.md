@@ -8,7 +8,7 @@ Even though NCAR is transitioning towards Pyhton, they stated they wont be aband
 
 The first major hurdle I ran into was installing NCL via Conda from NCAR's website: [http://www.ncl.ucar.edu/Download/conda.shtml](http://www.ncl.ucar.edu/Download/conda.shtml "NCL Conda Install")
 
-The Conda environment was created no problem, but when checking if NCL was installed coreectly, I ran into an error:
+The Conda environment was created no problem, but when checking if NCL was installed correctly, I ran into an error:
 ```
 dyld: Library not loaded: @rpath/libwebp.7.dylib
 
