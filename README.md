@@ -27,4 +27,26 @@ conda create --name ncl_to_python --channel conda-forge/label/cf201901 pynio
 
 Notice the extra cf201901 before the pynio argument. Now everything is all good!!
 
-Printing ```ncl -V``` in the activated environment resulted in ```6.5.0```
+Printing ```ncl -V``` in the activated environment resulted in ```6.5.0```!
+
+---
+
+### Getting to know basic variables
+
+The syntax is simialr to many languages and variables can be assigned
+```var=12.0```
+Just like Python, we can pring out the value of the variable:
+```print(var)
+>>> 12.0
+```
+We can reassign the varibale to a new value <strong>as long as the variable type is the same!!</strong>
+```var=6.0
+print(var)
+>>> 6.0
+```
+However, if we want to reassign the variable to a string, we will run into an error:
+```var=100
+fatal:["NclVar.c":1390]:Assignment type mismatch, right hand side can't be coerced to type of left hand side
+```
+
+
