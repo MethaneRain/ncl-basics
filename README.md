@@ -6,4 +6,4 @@ Even though NCAR is transitioning towards Pyhton, they stated they wont be aband
 
 ---
 
-The first major hurdle I ran into was installing NCL via Conda from NCAR's website: <a ref="http://www.ncl.ucar.edu/Download/conda.shtml">
+The first major hurdle I ran into was installing NCL via Conda from NCAR's website: [I'm an inline-style link with title](http://www.ncl.ucar.edu/Download/conda.shtml "NCL Conda Install")
