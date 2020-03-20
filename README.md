@@ -45,7 +45,7 @@ print(var)
 >>> 6.0
 ```
 However, if we want to reassign the variable to a string, we will run into an error:
-```var=100
+```var="houseboat"
 fatal:["NclVar.c":1390]:Assignment type mismatch, right hand side can't be coerced to type of left hand side
 ```
 
