@@ -11,7 +11,7 @@ printVarSummary(fi)
 ;printVarSummary(t) ; print out the summary of the time variable
 vNames = getfilevarnames (fi) ; all variable names
           
-  nvars  = dimsizes(vnames)
+  nvars  = dimsizes(vNames)
 
   do nv = 0,nvars-1
     vtype  = getfilevartypes(f,vnames(nv))
