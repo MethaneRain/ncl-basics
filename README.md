@@ -60,7 +60,7 @@ fatal:["NclVar.c":1390]:Assignment type mismatch, right hand side can't be coerc
 
 #### 1) NetCDF (.nc)
 
-* GFS Reanalysis 4x Daily Pressures
+* GFS Reanalysis 4x Daily Geopotential Heights
 
 ```ncl
 load "$NCARG_ROOT/lib/ncarg/nclscripts/csm/gsn_code.ncl"
@@ -101,4 +101,4 @@ print(vNames)
 >>> (3)     time
 >>> (4)     hgt
 ```
-Sweet! So the variables are level, latitutes, longitudes, times, and actual pressure values.
+Sweet! So the variables are levels, latitutes, longitudes, times, and actual heights.
