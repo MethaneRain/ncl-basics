@@ -84,7 +84,7 @@ printVarSummary(fi)
 ```
 
 Exploring the variables:
-```
+```ncl
 vNames = getfilevarnames (fi)
 print(vNames)
 
