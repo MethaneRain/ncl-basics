@@ -14,13 +14,13 @@ vNames = getfilevarnames (fi) ; all variable names
   nvars  = dimsizes(vNames)
 
   do nv = 0,nvars-1
-    vtype  = getfilevartypes(f,vnames(nv))
-    vatts  := getfilevaratts(f,vnames(nv))       ; The := is important because these
-    dnames := getfilevardimnames(f,vnames(nv))   ; variables may be a different size
-    dsizes := getfilevardimsizes(f,vnames(nv))   ; the next time through the loop
+    vtype  = getfilevartypes(fi,vNames(nv))
+    vatts  := getfilevaratts(fi,vNames(nv))       ; The := is important because these
+    dnames := getfilevardimnames(fi,vNames(nv))   ; variables may be a different size
+    dsizes := getfilevardimsizes(fi,vNames(nv))   ; the next time through the loop
 
 ;   print("==================================================")
-    print("Variable '" + vnames(nv) + "'")
+    print("Variable '" + vNames(nv) + "'")
     print("  type            : " + vtype)
     if(.not.any(ismissing(dnames))) then
       print("  dimension names : " + str_join(dnames,","))
