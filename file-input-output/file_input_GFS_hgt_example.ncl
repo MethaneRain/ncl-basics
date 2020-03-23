@@ -9,5 +9,5 @@ printVarSummary(fi)
 
 vNames = getfilevarnames (fi)
 print(vNames)
-t = fi->time 
-printVarSummary(t)
+t = fi->time  ; set t to the time variable
+printVarSummary(t) ; print out the summary of the time variable
