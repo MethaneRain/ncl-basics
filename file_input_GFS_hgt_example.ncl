@@ -9,3 +9,5 @@ printVarSummary(fi)
 
 vNames = getfilevarnames (fi)
 print(vNames)
+t = fi->time 
+printVarSummary(t)
