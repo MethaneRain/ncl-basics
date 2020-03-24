@@ -49,6 +49,8 @@ begin
     res@cnLevelSpacingF = 40 ; Spacing
     res@cnFillOn = True
     res@cnFillPalette = "MPL_StepSeq"
+    ;mpDataSetName = "Earth..1"
+    res@mpOutlineBoundarySets = "GeophysicalAndUSStates"   
     plot = gsn_csm_contour_map(wks,hgt(10,5,:,:),res)  
 
 
