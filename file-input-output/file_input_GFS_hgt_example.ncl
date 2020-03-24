@@ -42,16 +42,28 @@ begin
     end do
     
     wks = gsn_open_wks("png","500mb_heights") 
+    res@gsnMaximize = True
+    res@gsnPaperMargin = 0.0
     res = True
     res@cnLevelSelectionMode = "ManualLevels"
-    res@cnMinLevelValF = min(hgt(10,5,:,:)) ; Min contour
-    res@cnMaxLevelValF = max(hgt(10,5,:,:)) ; Max contour
-    res@cnLevelSpacingF = 40 ; Spacing
+    res@cnMinLevelValF = min(hgt(30,5,:,:)) ; Min contour
+    res@cnMaxLevelValF = max(hgt(30,5,:,:)) ; Max contour
+    res@cnMinLevelValF = 5000 ; Min contour
+    res@cnMaxLevelValF = 5800 ; Max contour
+    res@cnLevelSpacingF = 10 ; Spacing
     res@cnFillOn = True
-    res@cnFillPalette = "MPL_StepSeq"
+    res@cnFillPalette = "so4_23"
+    ;cmap = read_colormap_file("so4_23")
+    ;res@cnFillPalette = cmap(::-1,:)
     ;mpDataSetName = "Earth..1"
+    res@mpLimitMode           = "LatLon"
+    res@mpMinLatF             = 20
+    res@mpMaxLatF             = 55
+    res@mpMinLonF             = 230
+    res@mpMaxLonF             = 290
+    res@mpCenterLonF          = -100.0
+    res@mpCenterLatF          = 40.0
+    res@mpGridAndLimbDrawOrder = "Predraw"
     res@mpOutlineBoundarySets = "GeophysicalAndUSStates"   
-    plot = gsn_csm_contour_map(wks,hgt(10,5,:,:),res)  
-
-
+    plot = gsn_csm_contour_map(wks,hgt(30,5,:,:),res)  
 end
