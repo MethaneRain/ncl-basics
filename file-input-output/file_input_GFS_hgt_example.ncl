@@ -4,7 +4,7 @@ begin
 
     setfileoption("nc", "FileStructure", "Advanced")
 
-    fn = "/Users/chowdahead/Desktop/hgt.2016.nc" 
+    fn = "/Path/To/File/hgt.2016.nc" 
     fi = addfile(fn, "r")
     printVarSummary(fi)
     ;print(vNames)
